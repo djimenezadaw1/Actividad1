@@ -10,10 +10,12 @@ public class CalcularPeriodo {
 		LocalDate fecha = LocalDate.of(1492, Month.OCTOBER, 12);
 		LocalDate fecha2 = LocalDate.of(1929, Month.OCTOBER, 24); // Añadimos otra fecha
 		LocalDate fecha3 = LocalDate.of(1945, Month.SEPTEMBER, 2); // Añadimos otra fecha
+		LocalDate fecha4 = LocalDate.of(1789, Month.MAY, 5);
 		// Mostramos cuÃ¡nto tiempo ha pasado
 		calcularPeriodo("El descubrimiento de América", fecha);
 		calcularPeriodo("Caida de Wall Sreet", fecha2);
 		calcularPeriodo("El fin de la segunda guerra mundia", fecha3);
+		calcularPeriodo("La revolución francesa", fecha4);
 		
 		
 	}
