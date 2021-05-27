@@ -9,11 +9,11 @@ public class CalcularPeriodo {
 		//Creamos la fecha del descubrimiento de am√©rica
 		LocalDate fecha = LocalDate.of(1492, Month.OCTOBER, 12);	 
 		// Mostramos cu√°nto tiempo ha pasado
-		calcularPeriodo("El descubrimiento de Am√©rica", fecha);
+		calcularPeriodo("El descubrimiento de AmÈrica", fecha);
 		
 	}
 	
-	public static void calcularPeriodo(String nombre, LocalDate fecha) {
+	public static String calcularPeriodo(String nombre, LocalDate fecha) {
         
         LocalDate fechaActual = LocalDate.now();
         Period periodo = Period.between(fecha, fechaActual);
@@ -23,9 +23,9 @@ public class CalcularPeriodo {
         int meses = periodo.getMonths();
         int dias = periodo.getDays();
         
-        String texto = String.format(nombre + " ocurri√≥ hace %d a√±os, %d meses y %d d√≠as.", anyos, meses, dias);
+        String texto = String.format(nombre + " ocurriÛ hace %d aÒos, %d meses y %d dÌas.", anyos, meses, dias);
          
-        System.out.println(texto);
+        return texto;
     }
  
 }
